@@ -1,3 +1,9 @@
 #hero .wrapper {
   z-index: 3;
+  position: relative;
+  display: none;
+}
+
+#hero .para {
+  background: white;
 }
