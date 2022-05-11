@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>EAGLEWALL</title>
+  <title>Login</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +28,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="abdullahSyedJavaScript.js"></script>
 
-
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="abdullahSyedStyles.css" rel="stylesheet" />
@@ -48,7 +47,7 @@
     <div class="container d-flex justify-content-between">
 
       <div class="logo">
-        <a href="index.html">
+        <a href="index.php">
           <img src="assets/img/logo.png" width="50" alt="">
         </a>
         <h1><a href="index.html">EAGLEWALL</a></h1>
@@ -57,65 +56,61 @@
 
     <nav id="navbar" class="navbar">
       <ul>
-
         <li>
           <a class="nav-link scrollto active" href="index.html">Home</a>
         </li>
-
         <li>
           <a class="nav-link scrollto active" href="sponsors.html">Sponsors</a>
         </li>
-
         <li>
           <a class="nav-link scrollto active" href="members.php">Members</a>
         </li>
-
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
   </header><!-- End Header -->
-
 
   <!-- ======= Hero Section ======= -->
 
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
 
     <br /><br /> <br /><br /><br /><br />
-    <br /><br /> <br /><br /><br /><br /><br /><br />
+    <br /><br /> <br /><br /><br /><br /><br />
 
-    <div class="container text-center text-md-left">
-      <div class="my-heading">
-        <h1>Sponsors</h1>
+    <div class="container">
+
+      <div class="card">
+        <div class="card-body">
+
+          <h4 class="card-title">Sign In</h4>
+          <br />
+
+          <form method="POST" action="process.php" class="needs-validation">
+
+            <div class="form-outline mb-4">
+              <input type="text" name="phone" class="form-control form-control-md" placeholder="Phone no." required pattern="[0-9+ ()]+" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <input type="password" name="password" class="form-control form-control-md" placeholder="Password" required />
+            </div>
+
+            <div class="pt-1 mb-4">
+              <center>
+                <button class="btn btn-dark btn-lg btn-block" name="sub" type="submit">Login</button>
+              </center>
+            </div>
+
+          </form>
+        </div>
       </div>
-    </div>
-
-    <div class="wrapper">
-      <img class="ad1" src="assets/img/ad1.png" height="250" alt="Responsive image">
-    </div><br />
-
-    <div class="container text-center text-md-left">
-
-      <video width="500" height="300" controls autoplay>
-        <source src="tesla_ad.mp4" type="video/mp4">
-        <source src="tesla_ad.webm" type="video/mp4">
-        <h2>Your browser does not support HTML video.</h2>
-      </video>
-
-      <p class="para">
-        Video courtesy of
-        <a href="https://www.tesla.com/" target="_blank">Tesla</a>
-      </p>
-
     </div>
 
     <br /><br /> <br /><br /><br />
     <br /><br /> <br /><br /><br />
     <br /><br /> <br />
 
-    <br /><br />
-
   </section><!-- End Hero -->
-
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -148,7 +143,6 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
